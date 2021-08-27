@@ -30,4 +30,4 @@ eval "$(nodenv init -)"
 
 # OS dependant .zshrc
 
-[ -f $ZDOTDIR/.zshrc_`uname` ] && . $ZDOTDIR/.zshrc_`uname`
+[ -f $HOME/.zshrc_`uname` ] && . $HOME/.zshrc_`uname`
