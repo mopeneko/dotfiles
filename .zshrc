@@ -26,5 +26,8 @@ setopt sharehistory
 # Hooks
 
 eval "$(starship init zsh)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(nodenv init -)"
+
+# OS dependant .zshrc
+
+[ -f $ZDOTDIR/.zshrc_`uname` ] && . $ZDOTDIR/.zshrc_`uname`
