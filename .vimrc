@@ -1,50 +1,46 @@
-" ==== dein.vim
-if &compatible
-  set nocompatible
-endif
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
-" Add the dein installation directory into runtimepath
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+" Appearance
+Plug 'vim-airline/vim-airline'
+Plug 'arcticicestudio/nord-vim'
 
-if dein#load_state('~/.cache/dein')
-  call dein#begin('~/.cache/dein')
+" Util
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'jiangmiao/auto-pairs'
+Plug 'dense-analysis/ale'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-goimports'
+Plug 'mattn/vim-lsp-icons'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'editorconfig/editorconfig-vim'
 
-  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
-  call dein#add('Shougo/deoplete.nvim')
+" Lang
+Plug 'posva/vim-vue'
+Plug 'Quramy/tsuquyomi'
+Plug 'Quramy/tsuquyomi-vue'
+" Plug 'leafgarland/typescript-vim'
 
-  " Support development plugins
-  call dein#add('editorconfig/editorconfig-vim')
+call plug#end()
 
-  " Languages plugins
-  call dein#add('fatih/vim-go')
-  call dein#add('posva/vim-vue')
-
-  " Visual plugins
-  call dein#add('vim-airline/vim-airline')
-
-  call dein#end()
-  call dein#save_state()
-endif
-
-filetype plugin indent on
-syntax enable
-" ==== End
-
-" Edit config
-set fenc=utf-8
-set cindent
-
-" Visual config
-colorscheme molokai
+" General
 set number
-set ruler
-set cursorline
-set showmatch
-set hlsearch
-set incsearch
-set laststatus=2
-syntax enable
-set tabstop=3
-set shiftwidth=3
-set autoindent
+colorscheme nord
 
+" Keymap
+nnoremap <C-e> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+
+" ale
+let g:ale_lint_on_enter = 1
+
+" vim-goimports
+let g:goimports_simplify = 1
+
+" tsuquyomi
+autocmd BufNewFile,BufRead *.vue set filetype=vue
