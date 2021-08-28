@@ -1,0 +1,15 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+
+brew "gh"
+brew "go"
+brew "neovim"
+brew "nodenv"
+brew "openjdk"
+brew "wget"
+
+cask "docker"
+cask "firefox"
+cask "jetbrains-toolbox"
+cask "visual-studio-code"
