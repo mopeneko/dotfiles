@@ -6,6 +6,10 @@ LN := /usr/bin/env ln -sfv
 
 all:
 
+.PHONY: preinstall
+preinstall:
+	./scripts/preinstall.sh
+
 .PHONY: install
 install:
 	@$(foreach dotfile, $(DOTFILES), \
