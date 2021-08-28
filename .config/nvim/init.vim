@@ -24,7 +24,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'posva/vim-vue'
 Plug 'Quramy/tsuquyomi'
 Plug 'Quramy/tsuquyomi-vue'
-" Plug 'leafgarland/typescript-vim'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
