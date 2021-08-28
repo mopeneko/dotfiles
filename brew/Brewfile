@@ -12,6 +12,7 @@ brew "wget"
 
 cask "docker"
 cask "firefox"
+cask "iterm2"
 cask "jetbrains-toolbox"
 cask "visual-studio-code"
 

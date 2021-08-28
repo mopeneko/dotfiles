@@ -265,6 +265,12 @@
         "options": {
           "full_name": "visual-studio-code"
         }
+      },
+      "iterm2": {
+        "version": "3.4.9",
+        "options": {
+          "full_name": "iterm2"
+        }
       }
     },
     "mas": {
