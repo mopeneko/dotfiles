@@ -1,4 +1,4 @@
-EXCLUSION := .DS_Store .git/\* .gitmodules .gitignore README.md Makefile brew/\* preinstall\*.sh
+EXCLUSION := .DS_Store .git/\* .gitmodules .gitignore README.md Makefile brew/\* scripts/\*
 DOTFILES_PATH := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 DOTFILES := $(shell printf " ! -path $(DOTFILES_PATH)/%s" $(EXCLUSION) | xargs find $(DOTFILES_PATH) -type f | sed "s|^$(DOTFILES_PATH)/||")
 
