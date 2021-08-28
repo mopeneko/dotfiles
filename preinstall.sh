@@ -7,6 +7,6 @@ if [ "$(uname)" = "Darwin" ]; then
 fi
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-if [ -f $HOME/.zshrc_`uname` ]; then
-  . $HOME/.zshrc_`uname`.sh
+if [ -f ./preinstall_`uname`.sh ]; then
+  . ./preinstall_`uname`.sh
 fi
