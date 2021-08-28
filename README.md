@@ -4,7 +4,7 @@
 
 1. Run `preinstall.sh`
 1. Exec `make install`
-1. Exec `brew bundle`
+1. (for macOS) Exec `brew bundle`
 
 ## Clean
 
