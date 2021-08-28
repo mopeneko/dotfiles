@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Run `preinstall.sh`
+1. Exec `make preinstall`
 1. Exec `make install`
 1. (for macOS) Exec `brew bundle`
 
