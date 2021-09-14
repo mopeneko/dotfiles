@@ -23,6 +23,9 @@ SAVEHIST=50000
 setopt histignorealldups histsavenodups
 setopt sharehistory
 
+# Key Config
+bindkey -e
+
 # OS dependant .zshrc
 
 [ -f $HOME/.zshrc_`uname` ] && . $HOME/.zshrc_`uname`
