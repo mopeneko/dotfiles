@@ -10,6 +10,8 @@ if [ "$(uname)" = "Darwin" ]; then
 fi
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
 if [ -f ./preinstall_`uname`.sh ]; then
   . ./preinstall_`uname`.sh
 fi
