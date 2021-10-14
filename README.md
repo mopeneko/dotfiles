@@ -1,5 +1,14 @@
 # dotfiles
 
+## Requirements
+
+- GNU make
+- curl
+- zsh
+- bash
+- NeoVim
+- Git
+
 ## Setup
 
 1. Exec `make preinstall`
