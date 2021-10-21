@@ -33,6 +33,7 @@ bindkey -e
 # Hooks
 
 eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
 
 # nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
