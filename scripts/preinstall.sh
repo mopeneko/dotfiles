@@ -12,6 +12,8 @@ fi
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
+mkdir ~/.zsh
+
 if [ -f ./preinstall_`uname`.sh ]; then
   . ./preinstall_`uname`.sh
 fi
