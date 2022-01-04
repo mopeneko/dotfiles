@@ -8,6 +8,7 @@
 - bash
 - NeoVim
 - Git
+- direnv
 
 ## Setup
 
